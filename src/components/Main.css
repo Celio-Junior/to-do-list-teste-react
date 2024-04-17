@@ -1,0 +1,57 @@
+.main{
+  background-color: #45C4B0;
+  margin: 50px auto;
+  width: 400px;
+  padding: 20px;
+  border-radius: 9px;
+  box-shadow: 0 0 20px #00000038;
+}
+.main h1{
+  font-size: 30px;
+  text-align: left;
+  width: fit-content;
+}
+
+.task{
+  margin-top: 15px;
+}
+
+.task li{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 3px;
+  border: 2px solid transparent;
+  transition: all 400ms ease-in-out;
+}
+
+.task span:first-child{
+  text-shadow: 0px 0px 3px #000
+}
+
+.task li:hover{
+  background-color: #9AEBA3;
+  border-color: #012030;
+  border-radius: 5px;
+}
+
+.task li span:last-child{
+  display: flex;
+  align-items: center;
+}
+.task li .edit, .task li .delete{
+  cursor: pointer;
+  margin-right: 6px;
+  transition: all 400ms ease-in-out;
+}
+
+.task li .edit{
+  color: #13678A;
+}
+
+.task li .delete{
+  color: #f04c64;
+}
+
+.task li:hover .edit, .task li:hover .delete{
+  color: #012030;
+}
